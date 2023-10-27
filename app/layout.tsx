@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import clsx from 'clsx'
 import { inter } from '@/app/ui/fonts'
+import Header from "@/app/header";
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -14,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={clsx(inter.className, 'p-4')}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
