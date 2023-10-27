@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@tanstack/react-table": "^8.10.7",
     "better-sqlite3": "^9.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
